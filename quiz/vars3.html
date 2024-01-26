@@ -5,8 +5,8 @@
             const PI = 3.14159;
             {
                 let radius = 5;
-                var area = PI * radius * radius;
-                // PI = 3.0;
+                var area = PI * radius * radius; // changed to var to access area outside of scope 
+                // PI = 3.0; commented out as can't reassign const
             }
             console.log(area);
 
