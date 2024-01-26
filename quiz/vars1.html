@@ -5,9 +5,9 @@
             let x = 1;
             var y = 2;
             {
+                let y = 2; // let is specific to the scope of the block, moved here as previously y was undeclared. 
                 y = y + 1;
                 console.log(x+y);
-                let y = 2;
             }
             console.log(x);
             console.log(y);
