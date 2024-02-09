@@ -5,9 +5,12 @@ const originalMatrix = [
     [7, 9, 8]
   ];
   
-  const newMatrix = originalMatrix.map((row) => {
-    return row.sort();
-  });
+  // const newMatrix = originalMatrix.map((row) => {
+  //   return row.sort();
+  // });
+
+  // deep copy of the matrix
+  const newMatrix = originalMatrix.map(row => [...row]);
   
   // Modifying the original matrix (changing the last element of the first row)
   originalMatrix[0][2] = 99;
